@@ -163,7 +163,7 @@ public class Login extends AppCompatActivity {
                     .setCancelable(false).show();
         }
     }else{
-
+utils.NoInternetDialog();
 }
     }
 
