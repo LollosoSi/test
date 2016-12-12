@@ -18,4 +18,5 @@
     <string name="processing">Processing your data...</string>
     <string name="wts">Wait a second!</string>
     <string name="ftgynatd">To play this game you need automatic date and time enabled! Please enable it.</string>
+    <string name="ynct"> Your Internet connection does not give signs of life, you must be connected to play</string>
 </resources>

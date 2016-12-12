@@ -19,4 +19,5 @@
     <string name="processing">Aggiusto i tuoi dati</string>
     <string name="wts">Aspetta un attimo!</string>
     <string name="ftgynatd">Devi attivare la data automatica per poter giocare, per favore attivala.</string>
+    <string name="ynct">La tua connessione Internet non dà segni di vita, devi essere connesso per giocare</string>
 </resources>

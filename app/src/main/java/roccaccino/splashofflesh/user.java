@@ -107,15 +107,16 @@ public class user {
 
     }
 
-    Long GetFood() {
+    Long GetElement(final String Element) {
+
 
         final SharedPreferences sh=questo.getSharedPreferences("userdata",questo.MODE_PRIVATE);
-        Long exValue = sh.getLong("Food",0);
-        sh.edit().putLong("Food",-1).commit();
-        mDatabase.child("users").child("region").child(regione).child("users").child(nome).child("Properties").child("Food").addListenerForSingleValueEvent(new ValueEventListener() {
+        Long exValue = sh.getLong(Element,0);
+        sh.edit().putLong(Element,-1).commit();
+        mDatabase.child("users").child("region").child(regione).child("users").child(nome).child("Properties").child(Element).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                sh.edit().putLong("Food", (Long) dataSnapshot.getValue()).commit();
+                sh.edit().putLong(Element, (Long) dataSnapshot.getValue()).commit();
 
 
             }
@@ -126,10 +127,10 @@ public class user {
             }
         });
 
-        if (sh.getLong("Food",-1) != -1){
-            return sh.getLong("Food",-1);
+        if (sh.getLong(Element,-1) != -1){
+            return sh.getLong(Element,-1);
         }else{
-            sh.edit().putLong("Food",exValue).commit();
-            return sh.getLong("Food",0);}
+            sh.edit().putLong(Element,exValue).commit();
+            return sh.getLong(Element,0);}
     }
 }

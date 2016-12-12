@@ -38,6 +38,8 @@ public class Login extends AppCompatActivity {
     String SelectedRegion = "";
 
 
+    utilities utils = new utilities();
+
     boolean oneTime = true;
     boolean HasReadEULA = false;
     boolean shititsFirst = true;
@@ -58,7 +60,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        utils.Init(Login.this);
+if(utils.isNetworkAvailable()){
         if (android.provider.Settings.Global.getInt(getContentResolver(), android.provider.Settings.Global.AUTO_TIME, 0)==1) {
 
 
@@ -158,6 +161,9 @@ public class Login extends AppCompatActivity {
                     })
                     .setCancelable(false).show();
         }
+    }else{
+
+}
     }
 
     public void listenerForButton() {

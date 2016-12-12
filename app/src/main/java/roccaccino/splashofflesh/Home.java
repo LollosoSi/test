@@ -1,12 +1,16 @@
 package roccaccino.splashofflesh;
 
 import android.app.Activity;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 
 public class Home extends Activity {
 
      user utente =new user();
+     utilities utils = new utilities();
 
     String LogTag = "Home.class";
 
@@ -20,6 +24,12 @@ public class Home extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        utils.Init(Home.this);
+
+        if(utils.isNetworkAvailable()){
         utente.Init(Home.this);
+        }
     }
+
 }
