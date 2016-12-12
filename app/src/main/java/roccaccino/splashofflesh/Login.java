@@ -59,9 +59,10 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
         utils.Init(Login.this);
-if(utils.isNetworkAvailable()){
+        if(utils.isNetworkAvailable()){
+        setContentView(R.layout.activity_login);
+
         if (android.provider.Settings.Global.getInt(getContentResolver(), android.provider.Settings.Global.AUTO_TIME, 0)==1) {
 
 
