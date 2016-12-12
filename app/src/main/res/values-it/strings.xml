@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spiaccicaggio</string>
+    <string name="insertnamehint">Metti il tuo nickname</string>
+    <string name="insertpasswordhint">Inserisci la tua password</string>
+    <string name="getin">Salta dentro!</string>
+    <string name="iaccepteula">Accetto l\'EULA</string>
+    <string name="tnprmt">Tieni premuto lo switch per vedere l\'EULA</string>
+    <string name="shw">Vedi</string>
+    <string name="ired">Ho letto</string>
+    <string name="chregion">Devi scegliere una regione!</string>
+    <string name="nmtk">Questo nome è stato già preso</string>
+    <string name="wrgpsw">Password Errata</string>
+    <string name="registr">Registrazione</string>
+    <string name="dywntc">Vuoi registrare un nuovo account? Questo nome non è stato preso quindi puoi usarlo!</string>
+    <string name="dtmncnt">Dati obbligatori mancanti</string>
+    <string name="ymstagr">Devi accettare l\'EULA</string>
+    <string name="wait">Aspetta un attimo per favore...</string>
+    <string name="processing">Aggiusto i tuoi dati</string>
+    <string name="wts">Aspetta un attimo!</string>
+    <string name="ftgynatd">Devi attivare la data automatica per poter giocare, per favore attivala.</string>
+</resources>

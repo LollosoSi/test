@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "7898198503",
+    "firebase_url": "https://splash-of-flesh.firebaseio.com",
+    "project_id": "splash-of-flesh",
+    "storage_bucket": "splash-of-flesh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7898198503:android:c2cebb49ef3c2567",
+        "android_client_info": {
+          "package_name": "roccaccino.splashofflesh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7898198503-asrb4bpctnjj6u0n17tde47bcgsgkui6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "roccaccino.splashofflesh",
+            "certificate_hash": "06B032B87756173C7A5B21A0623CF9411F6B9232"
+          }
+        },
+        {
+          "client_id": "7898198503-ungs0bbqp87ju4mh6bcdl01snno6m6co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2MTtWsp_uLi7Q8GRkkypg3jD2ma99gow"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7898198503-ungs0bbqp87ju4mh6bcdl01snno6m6co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

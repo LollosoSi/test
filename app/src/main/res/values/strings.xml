@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SplashofFlesh</string>
+    <string name="insertnamehint">Insert your nickname</string>
+    <string name="insertpasswordhint">Insert your password</string>
+    <string name="getin">Jump in!</string>
+    <string name="iaccepteula">I Agree to your EULA</string>
+    <string name="tnprmt">Hold switch to see the EULA</string>
+    <string name="shw">Show</string>
+    <string name="ired">I have read</string>
+    <string name="chregion">Please choose a region</string>
+    <string name="nmtk">This name is taken</string>
+    <string name="wrgpsw">Wrong password</string>
+    <string name="registr">Signing up</string>
+    <string name="dywntc">Do you want a new account? This name is not registered so you can use it!</string>
+    <string name="dtmncnt">Obbligatory data is missing</string>
+    <string name="ymstagr">You must agree the EULA</string>
+    <string name="wait">Please wait...</string>
+    <string name="processing">Processing your data...</string>
+    <string name="wts">Wait a second!</string>
+    <string name="ftgynatd">To play this game you need automatic date and time enabled! Please enable it.</string>
+</resources>
