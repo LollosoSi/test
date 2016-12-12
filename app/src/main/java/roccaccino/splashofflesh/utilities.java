@@ -38,23 +38,30 @@ public class utilities {
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        questo.startActivity(new Intent(Settings.ACTION_HOME_SETTINGS));
+                        questo.startActivity(new Intent(Settings.ACTION_SETTINGS));
                     }
                 })
                 .setCancelable(false).show();
 
     }
 
-    public boolean isNetworkAvailable() {
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) questo.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null;
+    }
+
+    public boolean isInternetAvailable() {
 
         final SharedPreferences sh = questo.getSharedPreferences("temp",Context.MODE_PRIVATE);
 
         sh.edit().putBoolean("action",false).commit();
 
-        Handler handler = new Handler();
 
 
-        final Runnable r = new Runnable() {
+        new Thread(new Runnable() {
+            @Override
             public void run() {
 
                 if (isNetworkAvailable()) {
@@ -74,12 +81,12 @@ public class utilities {
                     }
                 } else {
                     Log.d(LogTag, "No network available!");
+                    sh.edit().putBoolean("action",false).commit();
                 }
-                sh.edit().putBoolean("action",false).commit();
 
             }
-        };
-        handler.post(r);
+        }).start();
+
         boolean tmp = sh.getBoolean("action",false);
         sh.edit().clear();
         return tmp;

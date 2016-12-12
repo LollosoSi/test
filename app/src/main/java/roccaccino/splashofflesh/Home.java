@@ -31,7 +31,7 @@ public class Home extends Activity {
 
         utils.Init(Home.this);
 
-        if(utils.isNetworkAvailable()){
+        if(utils.isInternetAvailable()){
         utente.Init(Home.this);
 
             Food=utente.GetElement("Food");
